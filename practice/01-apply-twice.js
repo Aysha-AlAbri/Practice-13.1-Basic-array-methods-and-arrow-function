@@ -6,6 +6,8 @@
 
 function applyTwice(value, action) {
   // your code
+  //const first= action(value);m
+  return action(action(value));
 }
 
 // Expected output:
