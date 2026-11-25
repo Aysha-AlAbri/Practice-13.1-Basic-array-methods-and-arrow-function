@@ -6,6 +6,12 @@
 
 function getNamesFromCity(users, city) {
   // your code
+  const choiceUsers = users.filter(u => u.city === city);
+  const names = [];
+  choiceUsers.forEach(element => {
+    names.push(element.name);
+  });
+  return names;
 }
 
 const users = [
