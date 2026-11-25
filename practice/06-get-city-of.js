@@ -6,6 +6,12 @@
 
 function getCityOf(users, name) {
   // your code
+  const user = users.find(u => u.name === name);
+
+  if (user) return user.city;
+  
+  return null;
+  
 }
 
 const users = [
