@@ -5,6 +5,7 @@
 
 function countExpensive(products, limit) {
   // your code
+  return products.filter(p => p.price > limit).length;
 }
 
 const products = [
